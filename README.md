@@ -10,5 +10,14 @@
 <ul>
     <li> HTML, CSS and JS with ReactJS for UI Design </li>
     <li> Bootstrap and JQuery for enhancing the User Experience </li>
-    <li> JSP and Servlets will be used to dynamically serve the apps. <li>
+    <li> JSP and Servlets will be used to dynamically serve the apps. 
+    </li>
+</ul>
+
+### Back End: 
+<ul>
+    <li> Java based J2EE Development. </li>
+    <li> MySQL and XML for cloud storage and retrieval. </li>
+    <li> JDBC will be used to connect the backend code and the server
+    </li>
 </ul>
