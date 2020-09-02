@@ -7,6 +7,8 @@
 ## Tech Stack
 
 ### Front End: 
+<ul>
     <li> HTML, CSS and JS with ReactJS for UI Design </li>
     <li> Bootstrap and JQuery for enhancing the User Experience </li>
-    <li> JSP and Servlets will be used to dynamically serve the apps. </li>
+    <li> JSP and Servlets will be used to dynamically serve the apps. <li>
+</ul>
