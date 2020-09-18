@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    .sidenav 
+    {
+        height: 100%;
+        width: 0;
+        position: fixed; 
+        z-index: 1;
+        top: 0;
+        right: 0; 
+        background-color:#1d809f;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a 
+    {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color:black;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover 
+    {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn 
+    {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    span
+    {
+        float:right;
+        padding-right: 30px;
+    }
+    
+    @media screen and (max-height: 450px) 
+    {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+ 
+    .header 
+    {
+        height: 20%;
+    }
+</style>
+</head>
+<body>
+    
+        
+<div id="mySidenav" class="sidenav">
+    
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="admindash.html">Home</a>
+  <a href="create.html">Create</a>
+  <a href="view.html">View</a>
+  <a href="update.html">Update</a>
+  <a href="delete.html">Delete</a>
+  <a href="reports.html">Reports</a>
+  <a href="rpapers.html">Research Papers</a>
+  
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;right:0;margin-top:30px;" onclick="openNav()">&#9776;</span>
+
+    <div class="header">
+        <br>
+        <center><h1>
+            Admin Profile
+        </h1></center>
+    </div>
+    <br>
+    <div style="height: 10%;"></div>
+    <div class="body" style="height: 70%;">
+        <div style="width: 25%; margin-left:30px; float: left; background: mintcream;">
+        <center>
+            <h1>
+                Dashboard
+            </h1>
+            <br>
+            <img src="https://bit.ly/2H7Fywh" height="100px" width="100px"/>
+            <br>
+            <br>
+            <h3>User Details</h3>
+            <h4><br>
+                <p>Name: Albus Dumbledore<br></p>
+            <p>Department: CSE<br></p>
+            <p>Role: Assistant Prof</p>
+           </h4>
+           <br><br>
+           <button type="button" onclick="logout()" class="btn btn-primary">Logout</button>
+           <br><br>
+        </center>
+        </div>
+
+        <div style="width: 70%; margin-right: 30px; float: right; background: cornsilk;">
+            <div style="margin-left: 30px;">
+            <h1>
+                Hello DumbleDore,
+            </h1><br>
+            <h3>
+                Recent Activities:
+                <ol>
+                    <li>
+                        Conducted Test in Compiler Design Unit - 4
+                    </li>
+                    <li>
+                        Attended meeting regarding next Periodicals
+                    </li>
+                    
+                    <li>
+                        Updated Tutorials Marks
+                    </li>
+                    
+                    <li>
+                        Added Resources to DBMS Unit 5
+                    </li>
+                </ol>
+                <br><br><br>
+                <br>
+                <br><br><br>
+            </h3>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() 
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() 
+        {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function logout()
+        {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    </body>
+</html>
